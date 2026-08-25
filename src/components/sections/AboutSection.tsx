@@ -18,7 +18,7 @@ export default function AboutSection() {
             {/* Portrait Image in refined Black & White Tone */}
             <img
               src="/assets/ravinder_portrait.jpg"
-              alt="Ravinder Singh - Creative Director & Senior Product Designer"
+              alt="Ravinder Singh - Senior UI/UX & Product Designer"
               className="w-full h-full object-cover object-top grayscale contrast-110 brightness-95 transition-all duration-700 group-hover:scale-105 group-hover:contrast-125"
             />
             {/* Overlay Gradient for seamless editorial contrast */}
