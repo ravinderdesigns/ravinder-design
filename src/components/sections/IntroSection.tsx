@@ -45,10 +45,10 @@ export default function IntroSection() {
           className="grid grid-cols-1 md:grid-cols-2 gap-8 text-lg sm:text-2xl md:text-3xl text-zinc-200 font-sans leading-relaxed pt-8 border-t border-white/15"
         >
           <p className="font-normal text-white">
-            I'm a Senior UI/UX & Product Designer and Creative Lead focused on turning complex requirements into intuitive, scalable digital experiences.
+            I solve complex product problems, lead design teams, create scalable systems, and can take a product from UX strategy through design and implementation.
           </p>
           <p className="text-zinc-300 font-normal">
-            My work sits at the intersection of user experience, visual brand identity, design systems, front-end architecture and AI-assisted workflows.
+            I work across UX strategy, visual design, design systems and front-end implementation, with a particular interest in using AI to accelerate exploration and prototyping without losing the human side of design.
           </p>
         </motion.div>
       </div>

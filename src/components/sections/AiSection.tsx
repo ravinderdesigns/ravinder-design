@@ -13,16 +13,12 @@ export default function AiSection() {
   ];
 
   const aiTools = [
-    "Antigravity AI",
     "ChatGPT",
-    "Figma AI",
-    "Cursor AI",
     "Claude",
-    "Lovable",
     "Gemini",
-    "Codex",
-    "Stitch",
-    "Shopify AI",
+    "Figma AI",
+    "Cursor",
+    "Lovable",
   ];
 
   return (

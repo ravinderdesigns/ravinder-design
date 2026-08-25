@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function LeadershipSection() {
   const stats = [
     { value: "8+", label: "DESIGNERS LED", sub: "Guided cross-functional design teams to launch key product initiatives." },
-    { value: "50+", label: "WEB & MOBILE APPS", sub: "Delivered high-performing web apps, mobile products & eCommerce platforms." },
+    { value: "50+", label: "DIGITAL PRODUCTS & WEBSITES", sub: "Delivered high-performing SaaS platforms, web apps & eCommerce experiences." },
     { value: "15+", label: "STAKEHOLDERS COLLABORATED WITH", sub: "Aligned product strategies across C-suite executives, PMs, and engineering." },
     { value: "8", label: "JUNIOR DESIGNERS MENTORED", sub: "Fostered team growth, design craft, and career progression pathways." },
   ];

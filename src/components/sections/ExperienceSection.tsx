@@ -12,7 +12,7 @@ export default function ExperienceSection() {
       location: "Mohali, India",
       status: "Current Leadership Role",
       bullets: [
-        "Directed a team of 8+ designers to deliver 50+ web and mobile applications.",
+        "Directed a team of 8+ designers to deliver 50+ digital products and websites.",
         "Streamlined design workflows using Figma, reducing project turnaround by 30%.",
         "Collaborated with 15+ stakeholders to create responsive dashboards and AI-enhanced designs.",
         "Mentored 8 junior designers in Graphics/Web and accessibility best practices.",

@@ -32,7 +32,7 @@ export default function AboutSection() {
                 RAVINDER SINGH
               </div>
               <div className="text-xs font-mono text-zinc-300">
-                Senior UI/UX & Product Designer · Creative Director
+                Senior UI/UX & Product Designer
               </div>
             </div>
           </div>
@@ -57,10 +57,10 @@ export default function AboutSection() {
 
           <div className="space-y-6 text-lg sm:text-2xl text-zinc-200 font-sans leading-relaxed">
             <p className="font-normal text-white">
-              I'm a Senior UI/UX & Product Designer and Creative Lead with 12+ years of experience creating web, mobile, SaaS, eCommerce and dashboard experiences.
+              I'm a Senior UI/UX & Product Designer with 12+ years of experience turning complex business requirements into simple, scalable digital experiences.
             </p>
             <p className="text-zinc-300 font-normal">
-              I combine UX strategy, brand aesthetics, modular design systems, front-end architecture and AI-assisted workflows to turn complex requirements into intuitive, performant digital experiences.
+              I work across UX strategy, visual design, design systems and front-end implementation, with a particular interest in using AI to accelerate exploration and prototyping without losing the human side of design.
             </p>
           </div>
 

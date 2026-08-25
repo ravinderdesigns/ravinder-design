@@ -9,45 +9,39 @@ export default function SkillMatrixSection() {
 
   const categories = [
     { id: "ALL", label: "FULL SPECTRUM", icon: Sparkles },
-    { id: "DESIGN", label: "DESIGN & UI", icon: Layers },
+    { id: "DESIGN", label: "DESIGN", icon: Layers },
     { id: "FRONT-END", label: "FRONT-END", icon: Code },
-    { id: "CMS", label: "CMS & WEB", icon: Globe },
+    { id: "PLATFORMS", label: "PLATFORMS", icon: Globe },
     { id: "AI", label: "AI WORKFLOW", icon: Cpu },
   ];
 
   const tools = [
-    { name: "Figma", category: "DESIGN", level: "Core", tag: "Design Systems & UI" },
-    { name: "Adobe Photoshop", category: "DESIGN", level: "Expert", tag: "Visual Craft" },
-    { name: "Adobe XD", category: "DESIGN", level: "Advanced", tag: "Prototyping" },
-    { name: "Adobe Illustrator", category: "DESIGN", level: "Expert", tag: "Vector & Branding" },
-    { name: "Canva", category: "DESIGN", level: "Proficient", tag: "Rapid Assets" },
-    { name: "Framer", category: "DESIGN", level: "Advanced", tag: "Interactive Web" },
+    // Design
+    { name: "Figma", category: "DESIGN", tag: "Design Systems & UI" },
+    { name: "Adobe CC", category: "DESIGN", tag: "Creative Suite & Visual Craft" },
+    { name: "Design Systems", category: "DESIGN", tag: "Component Architecture & Tokens" },
+    { name: "Prototyping", category: "DESIGN", tag: "Interactive Motion & User Flows" },
+    { name: "UX Research", category: "DESIGN", tag: "User Journey & Usability Strategy" },
 
-    { name: "HTML5", category: "FRONT-END", level: "Expert", tag: "Semantic Markup" },
-    { name: "CSS3", category: "FRONT-END", level: "Expert", tag: "Layouts & Animations" },
-    { name: "JavaScript", category: "FRONT-END", level: "Advanced", tag: "ES6+ Logic" },
-    { name: "React", category: "FRONT-END", level: "Advanced", tag: "Component Architectures" },
-    { name: "Angular", category: "FRONT-END", level: "Proficient", tag: "Enterprise UI" },
-    { name: "Tailwind CSS", category: "FRONT-END", level: "Expert", tag: "Utility Systems" },
-    { name: "Bootstrap", category: "FRONT-END", level: "Expert", tag: "Grid Frameworks" },
-    { name: "jQuery", category: "FRONT-END", level: "Expert", tag: "DOM Utilities" },
+    // Front-End
+    { name: "HTML/CSS", category: "FRONT-END", tag: "Semantic Markup & Modern CSS" },
+    { name: "JavaScript", category: "FRONT-END", tag: "ES6+ Logic & Dynamic Interfaces" },
+    { name: "React", category: "FRONT-END", tag: "Component Architectures & State" },
+    { name: "Tailwind", category: "FRONT-END", tag: "Utility-First Design Systems" },
+    { name: "GSAP", category: "FRONT-END", tag: "High-Performance Motion & Animation" },
 
-    { name: "WordPress", category: "CMS", level: "Expert", tag: "Custom Themes & Builders" },
-    { name: "Shopify", category: "CMS", level: "Advanced", tag: "eCommerce Storefronts" },
-    { name: "Webflow", category: "CMS", level: "Advanced", tag: "No-Code Development" },
-    { name: "Wix", category: "CMS", level: "Advanced", tag: "Web Design" },
-    { name: "Elementor", category: "CMS", level: "Expert", tag: "WordPress Page Builder" },
+    // Platforms
+    { name: "WordPress", category: "PLATFORMS", tag: "Custom Themes & CMS Solutions" },
+    { name: "Shopify", category: "PLATFORMS", tag: "eCommerce Storefronts & Liquid" },
+    { name: "Webflow", category: "PLATFORMS", tag: "Visual Development & CMS" },
 
-    { name: "Antigravity AI", category: "AI", level: "Mastery", tag: "Agentic & Multi-Modal AI" },
-    { name: "ChatGPT", category: "AI", level: "Mastery", tag: "Prompt Engineering & Specs" },
-    { name: "Figma AI", category: "AI", level: "Core", tag: "Automated Layouts" },
-    { name: "Cursor AI", category: "AI", level: "Advanced", tag: "AI Code Generation" },
-    { name: "Claude", category: "AI", level: "Mastery", tag: "Architectural Ideation" },
-    { name: "Lovable", category: "AI", level: "Advanced", tag: "Rapid Prototyping" },
-    { name: "Gemini", category: "AI", level: "Advanced", tag: "Multimodal Exploration" },
-    { name: "Codex", category: "AI", level: "Advanced", tag: "Code Automation" },
-    { name: "Stitch", category: "AI", level: "Proficient", tag: "Design-Code Sync" },
-    { name: "Shopify AI", category: "AI", level: "Advanced", tag: "E-comm Intelligence" },
+    // AI Workflow
+    { name: "ChatGPT", category: "AI", tag: "Prompt Engineering & Product Specs" },
+    { name: "Claude", category: "AI", tag: "Architectural Ideation & UX Strategy" },
+    { name: "Gemini", category: "AI", tag: "Multimodal Exploration & Logic" },
+    { name: "Figma AI", category: "AI", tag: "Automated Layouts & Variations" },
+    { name: "Cursor", category: "AI", tag: "AI-Assisted Code Generation" },
+    { name: "Lovable", category: "AI", tag: "Rapid Prototyping & MVPs" },
   ];
 
   const filteredTools =
@@ -116,9 +110,6 @@ export default function SkillMatrixSection() {
                     {tool.name}
                   </h3>
                 </div>
-                <span className="px-2.5 py-1 rounded-full text-[10px] font-mono bg-white/10 border border-white/15 text-zinc-200 group-hover:text-white group-hover:border-[#ff2a6d]/40 transition-colors">
-                  {tool.level}
-                </span>
               </div>
               <div className="mt-5 pt-3 border-t border-white/10 flex items-center justify-between text-xs text-zinc-300 font-mono">
                 <span>{tool.tag}</span>

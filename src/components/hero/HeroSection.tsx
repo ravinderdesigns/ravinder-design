@@ -2,7 +2,7 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { ArrowUpRight, FileText, MessageCircle } from "lucide-react";
+import { ArrowUpRight, FileText, MessageCircle, Linkedin } from "lucide-react";
 
 interface HeroSectionProps {
   onOpenContact: () => void;
@@ -20,10 +20,10 @@ export default function HeroSection({ onOpenContact }: HeroSectionProps) {
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
 
   const bottomItems = [
-    { num: "# 01", title: "Brand Strategy", sub: "Product Strategy & UX Architecture" },
-    { num: "# 02", title: "Brand Identity Design", sub: "UI & Scalable Design Systems" },
-    { num: "# 03", title: "Packaging Design", sub: "Front-End & Creative Development" },
-    { num: "# 04", title: "Creative Direction", sub: "Product Leadership & AI Integration" },
+    { num: "# 01", title: "UX Strategy", sub: "Product Strategy & Architecture" },
+    { num: "# 02", title: "Visual Design", sub: "UI & Scalable Design Systems" },
+    { num: "# 03", title: "Front-End Execution", sub: "Component Engineering & Code Fidelity" },
+    { num: "# 04", title: "AI-Assisted Design", sub: "Rapid Exploration & Prototyping" },
   ];
 
   return (
@@ -36,39 +36,43 @@ export default function HeroSection({ onOpenContact }: HeroSectionProps) {
         style={{ opacity, y }}
         className="w-full my-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center"
       >
-        {/* Left Column: Greeting & Huge Bold Title */}
+        {/* Left Column: Greeting, Availability & Huge Bold Title */}
         <div className="lg:col-span-7 space-y-4">
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="flex items-center gap-3"
+            className="flex flex-wrap items-center gap-3"
           >
             <span className="text-lg sm:text-2xl md:text-3xl text-zinc-100 font-sans font-medium tracking-tight">
-              Hey, I'm a
+              Hey, I'm
             </span>
             <span className="px-3 py-0.5 rounded-full glass-pill border border-white/20 text-[11px] font-mono tracking-widest text-zinc-300 uppercase">
               RAVINDER SINGH
             </span>
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 font-mono text-[10px] tracking-wider uppercase">
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+              <span>Available for Opportunities</span>
+            </div>
           </motion.div>
 
           <motion.h1
             initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.85, delay: 0.25 }}
-            className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-display font-black tracking-tight text-white leading-[0.92] drop-shadow-lg"
+            className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-black tracking-tight text-white leading-[0.96] drop-shadow-lg"
           >
-            Creative <br />
-            Director
+            Senior UI/UX & <br />
+            Product Designer
           </motion.h1>
 
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="pt-2 text-xs sm:text-sm font-mono tracking-widest text-zinc-300 uppercase"
+            className="pt-2 text-xs sm:text-sm font-mono tracking-widest text-[#ff5500] uppercase font-bold"
           >
-            Senior UI/UX · Product Designer · Creative Lead
+            Design Lead · Front-End · AI-Assisted Design
           </motion.div>
         </div>
 
@@ -80,15 +84,15 @@ export default function HeroSection({ onOpenContact }: HeroSectionProps) {
             transition={{ duration: 0.85, delay: 0.45 }}
             className="space-y-4"
           >
-            <h2 className="text-2xl sm:text-4xl md:text-5xl font-display font-bold text-white tracking-tight leading-[1.15] drop-shadow-md">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-bold text-white tracking-tight leading-[1.15] drop-shadow-md">
               Great design should feel invisible.
             </h2>
             <p className="text-sm sm:text-base md:text-lg text-zinc-200 font-sans font-normal leading-relaxed max-w-lg">
-              From logo to language, I build brands that connect and convert. 12+ years shaping digital products, design systems, and high-performance user experiences.
+              12+ years designing digital products, SaaS platforms, eCommerce experiences and high-performance websites — combining UX strategy, visual design, design systems and front-end execution.
             </p>
           </motion.div>
 
-          {/* Quick CTA Actions: Explore Work, Resume, WhatsApp */}
+          {/* Quick CTA Actions: Explore Work, LinkedIn, Resume, WhatsApp */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -104,10 +108,20 @@ export default function HeroSection({ onOpenContact }: HeroSectionProps) {
             </a>
 
             <a
+              href="https://www.linkedin.com/in/ravinder-singh-b2369624/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-5 py-3.5 glass-pill hover:bg-white/15 text-zinc-100 hover:text-white border border-white/20 rounded-full font-mono text-xs tracking-widest uppercase transition-all duration-300 flex items-center gap-2 hover:border-[#0a66c2]/80 hover:shadow-[0_0_20px_rgba(10,102,194,0.35)]"
+            >
+              <Linkedin className="w-3.5 h-3.5 text-[#0a66c2]" />
+              <span>LINKEDIN</span>
+            </a>
+
+            <a
               href="/assets/ravinder_singh_resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3.5 glass-pill hover:bg-white/15 text-zinc-100 hover:text-white border border-white/20 rounded-full font-mono text-xs tracking-widest uppercase transition-all duration-300 flex items-center gap-2 hover:border-[#ff2a6d]/50"
+              className="px-5 py-3.5 glass-pill hover:bg-white/15 text-zinc-100 hover:text-white border border-white/20 rounded-full font-mono text-xs tracking-widest uppercase transition-all duration-300 flex items-center gap-2 hover:border-[#ff2a6d]/50"
             >
               <FileText className="w-3.5 h-3.5 text-[#ff5500]" />
               <span>RESUME</span>
@@ -117,7 +131,7 @@ export default function HeroSection({ onOpenContact }: HeroSectionProps) {
               href="https://wa.me/919464550630?text=Hi%20Ravinder,%20I%20saw%20your%20portfolio%20and%20would%20love%20to%20connect!"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3.5 bg-emerald-500/15 hover:bg-emerald-500/25 text-emerald-300 hover:text-emerald-200 border border-emerald-500/40 hover:border-emerald-400 rounded-full font-mono text-xs tracking-widest uppercase transition-all duration-300 flex items-center gap-2 shadow-[0_0_20px_rgba(16,185,129,0.25)] hover:shadow-[0_0_30px_rgba(16,185,129,0.4)]"
+              className="px-5 py-3.5 bg-emerald-500/15 hover:bg-emerald-500/25 text-emerald-300 hover:text-emerald-200 border border-emerald-500/40 hover:border-emerald-400 rounded-full font-mono text-xs tracking-widest uppercase transition-all duration-300 flex items-center gap-2 shadow-[0_0_20px_rgba(16,185,129,0.25)] hover:shadow-[0_0_30px_rgba(16,185,129,0.4)]"
             >
               <MessageCircle className="w-3.5 h-3.5 text-emerald-400" />
               <span>WHATSAPP</span>
@@ -126,14 +140,14 @@ export default function HeroSection({ onOpenContact }: HeroSectionProps) {
         </div>
       </motion.div>
 
-      {/* Bottom Horizontal Row with 4 Numbered Focus Areas (Matching reference image) */}
+      {/* Bottom Horizontal Row with 4 Numbered Focus Areas */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.75 }}
         className="w-full pt-8 sm:pt-12 border-t border-white/15 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8"
       >
-        {bottomItems.map((item, idx) => (
+        {bottomItems.map((item) => (
           <div
             key={item.num}
             className="group space-y-1.5 cursor-default transition-all duration-300"
