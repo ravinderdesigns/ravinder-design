@@ -23,7 +23,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Ravinder Singh | Senior UI/UX & Product Designer · Design Lead · Front-End",
   description:
-    "12+ years shaping digital products, interfaces and experiences across web, mobile, SaaS, dashboards and eCommerce. DESIGN → THINK → BUILD → EVOLVE.",
+    "10+ Years shaping digital products, interfaces and experiences across web, mobile, SaaS, dashboards and eCommerce. DESIGN → THINK → BUILD → EVOLVE.",
   keywords: [
     "Ravinder Singh",
     "UI/UX Designer",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Ravinder Singh | Senior UI/UX & Product Designer",
     description:
-      "12+ years shaping digital products across web, mobile, SaaS, dashboards and eCommerce.",
+      "10+ Years shaping digital products across web, mobile, SaaS, dashboards and eCommerce.",
     type: "website",
   },
 };

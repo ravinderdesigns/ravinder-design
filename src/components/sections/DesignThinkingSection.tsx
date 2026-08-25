@@ -27,7 +27,7 @@ export default function DesignThinkingSection() {
             <span className="text-gradient-crimson">TO CLARITY.</span>
           </h2>
           <p className="text-sm md:text-base font-mono text-zinc-300 max-w-xl">
-            A disciplined 7-stage architectural sequence transforming vague requirements into performant products.
+            A structured 7-stage design process transforming complex requirements into clear, scalable digital experiences.
           </p>
         </div>
 

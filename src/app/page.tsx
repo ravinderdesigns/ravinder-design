@@ -14,6 +14,7 @@ import DesignThinkingSection from "@/components/sections/DesignThinkingSection";
 import LeadershipSection from "@/components/sections/LeadershipSection";
 import AiSection from "@/components/sections/AiSection";
 import WorkSection from "@/components/sections/WorkSection";
+import CaseStudiesSection from "@/components/sections/CaseStudiesSection";
 import ExperienceSection from "@/components/sections/ExperienceSection";
 import CertificationSection from "@/components/sections/CertificationSection";
 import AboutSection from "@/components/sections/AboutSection";
@@ -49,6 +50,7 @@ export default function Home() {
         <LeadershipSection />
         <AiSection />
         <WorkSection />
+        <CaseStudiesSection />
         <ExperienceSection />
         <CertificationSection />
         <AboutSection />

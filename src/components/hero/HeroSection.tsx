@@ -88,7 +88,7 @@ export default function HeroSection({ onOpenContact }: HeroSectionProps) {
               Great design should feel invisible.
             </h2>
             <p className="text-sm sm:text-base md:text-lg text-zinc-200 font-sans font-normal leading-relaxed max-w-lg">
-              12+ years designing digital products, SaaS platforms, eCommerce experiences and high-performance websites — combining UX strategy, visual design, design systems and front-end execution.
+              10+ Years designing digital products, SaaS platforms, eCommerce experiences and high-performance websites — combining UX strategy, visual design, design systems and front-end execution.
             </p>
           </motion.div>
 

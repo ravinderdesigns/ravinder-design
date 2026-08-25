@@ -57,7 +57,7 @@ export default function AboutSection() {
 
           <div className="space-y-6 text-lg sm:text-2xl text-zinc-200 font-sans leading-relaxed">
             <p className="font-normal text-white">
-              I'm a Senior UI/UX & Product Designer with 12+ years of experience turning complex business requirements into simple, scalable digital experiences.
+              I'm a Senior UI/UX & Product Designer with 10+ Years of experience turning complex business requirements into simple, scalable digital experiences.
             </p>
             <p className="text-zinc-300 font-normal">
               I work across UX strategy, visual design, design systems and front-end implementation, with a particular interest in using AI to accelerate exploration and prototyping without losing the human side of design.
@@ -66,7 +66,7 @@ export default function AboutSection() {
 
           <div className="pt-6 border-t border-white/15 grid grid-cols-2 sm:grid-cols-3 gap-6 font-mono text-xs text-zinc-300">
             <div>
-              <span className="text-[#ff5500] block font-bold text-base">12+ YEARS</span>
+              <span className="text-[#ff5500] block font-bold text-base">10+ YEARS</span>
               <span>Total Industry Experience</span>
             </div>
             <div>

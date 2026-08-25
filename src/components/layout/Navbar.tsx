@@ -28,6 +28,7 @@ export default function Navbar({ onOpenContact }: NavbarProps) {
     { name: "ABOUT", href: "#about" },
     { name: "EXPERTISE", href: "#expertise" },
     { name: "WORK", href: "#work" },
+    { name: "CASE STUDIES", href: "#case-studies" },
     { name: "EXPERIENCE", href: "#experience" },
     { name: "CERTIFICATIONS", href: "#certifications" },
   ];
